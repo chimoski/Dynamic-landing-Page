@@ -15,12 +15,18 @@ const intrvl = setInterval(() => {
     const sec = Math.floor(((((dist / (1000 * 60 * 60) - day * 24) - hour) * 60) - min) * 60);
 
 
+
+
     countdown.innerHTML = `
-    <div>${day}<span class = 'span'>Days</span></div>
-    <div>${hour}<span class = 'span'>Hours</span></div>
-    <div>${min}<span class = 'span'>Minuites</span></div>
-    <div>${sec}<span class = 'span'>Seconds</span></div>
-    `
+        <div>${day}<span class = 'span'>Day/s</span></div>
+        <div>${hour}<span class = 'span'>Hour/s</span></div>
+        <div>${min}<span class = 'span'>Minuite/s</span></div>
+        <div>${sec}<span class = 'span'>Second/s</span></div>
+        `
+
+
+
+
 
     if (dist < 0) {
         clearInterval(intrvl);
