@@ -36,14 +36,14 @@ function setBgAndGreeting() {
     let today = new Date(),
         hours = today.getHours();
 
-    if (hours < 12) {
+    if (hours < 13) {
         // morning
         document.body.style.backgroundImage = ' url("./morning.png")';
         greeting.textContent = 'Good Morning';
         document.body.style.color = '#fff'
         time.style.color = '#000'
         names.style.color = '#000'
-    } else if (hours < 18) {
+    } else if (hours < 19) {
         // afternoon
         document.body.style.backgroundImage = ' url("./afternoon.jpg")'
         greeting.textContent = 'Good Afternoon';
