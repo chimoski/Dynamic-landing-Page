@@ -46,8 +46,8 @@ function setBgAndGreeting() {
     } else if (hours < 18) {
         // afternoon
         document.body.style.backgroundImage = ' url("./afternoon.jpg")'
-        greeting.textContent = 'Good Aternoon';
-        ocument.body.style.color = '#fff'
+        greeting.textContent = 'Good Afternoon';
+        document.body.style.color = '#fff'
     } else {
         // evening 
         document.body.style.background = ' url("evening.jpg")no-repeat center center/cover'
